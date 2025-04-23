@@ -1,1 +1,80 @@
-# Capstone_2025-
+### SCCU Customer Growth & Delivery Cost Optimization
+Overview
+This project analyzes customer growth patterns and optimizes delivery costs for SCCU using predictive modeling and clustering. By identifying growth-ready customers and optimizing delivery routing, we achieved significant cost reductions and created a scalable framework for future logistics and marketing strategies.
+Key Results
+Customer Growth Identification
+
+ - 1,268 customers transitioned from 'below' to 'above' the annual volume threshold (2023 to 2024)
+
+ -  These customers represent high-growth, high-value potential for targeted sales and retention programs
+
+Predictive Modeling (Logistic Regression)
+
+ -  Accuracy: 87%
+
+ -  Precision (above group): 0.74 | Recall: 0.87 | F1-score: 0.80
+
+ -  The model effectively identifies future growth customers for proactive targeting
+
+Multi-Dimensional Clustering (ZIP + Volume)
+
+  -  Customers clustered based on ZIP code, annual ordered cases, and gallons
+
+  -  5 optimized clusters support region-specific delivery routing and load planning
+
+  -  Enables smarter delivery zones tailored by order type and customer density
+
+Gallons vs. Cases Analysis
+
+  -  Segmented customers by gallons-per-case ratio to distinguish bulk liquid vs. packaged goods ordering patterns
+
+  -  Identified high gallon-per-case customers ideal for liquid delivery planning
+
+Validated Cost Efficiency: Before vs. After Clustering
+
+Scenario	Avg. Cost per Case	Avg. Cost per Gallon	Savings per Case	Cost Reduction (%)	Savings per Gallon	Cost Reduction (%)
+Before Clustering	$40.92	$18.97	–	–	–	–
+After Clustering	$2.19	$3.61	$38.73	94.64%	$15.36	80.95%
+  -  Clustering strategy reduced delivery costs by 94.6% per case and 80.9% per gallon
+
+Methodology
+1 Data Preparation
+   -  Cleaned and engineered features from transaction history (2023–2024)
+   -  Created target variable: customer transition from 'below' to 'above' threshold
+
+2 Predictive Modeling
+   -  Used Logistic Regression to classify growth-ready customers
+   -  Balanced classes via manual undersampling for robust modeling
+
+3 Customer Growth Analysis
+  -  Counted and profiled customers moving above the threshold year-over-year
+
+4  Clustering
+
+  -  Applied KMeans clustering on improved customers using ZIP code, annual cases, and gallons
+  -  Visualized clusters to inform delivery routing and resource allocation
+
+5  Cost Analysis
+
+  -  Compared average delivery costs before and after clustering (both per case and per gallon)
+  -  Quantified cost savings and efficiency gains from optimized delivery zones
+
+Strategic Takeaways
+  -  Clustering customers by geography and order behavior dramatically reduces delivery costs
+
+  -  Predictive modeling enables proactive targeting of high-potential growth customers
+  -  The approach supports scalable logistics planning with smarter routing and load balancing
+  -  Segmentation by order type (cases vs. gallons) allows for tailored delivery strategies
+
+Visualizations
+Confusion matrix and classification report for model evaluation
+![image](https://github.com/user-attachments/assets/0eb9f30a-fe93-4e59-afc3-7205fd63b41b)
+
+Cluster scatterplots by ZIP code, cases, and gallons
+![image](https://github.com/user-attachments/assets/c39b4b62-cf77-45cd-a9be-f25d9ebb6aef)
+![image](https://github.com/user-attachments/assets/0eb46fa5-49bc-4b5d-b24c-d7306eb13a13)
+
+Before/after bar charts for delivery cost per case and per gallon
+![image](https://github.com/user-attachments/assets/16f2ef1e-9553-4dd8-ac4c-5a1777fb235c)
+![image](https://github.com/user-attachments/assets/d53d1095-03f9-47f8-8ad7-adb56c02ee29)
+
