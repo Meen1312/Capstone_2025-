@@ -1,34 +1,27 @@
+### SCCU Background
+
+SCCU(Swire Coca-Cola United States) tries to optimize logistics by transitioning customers selling below a specific annual volume to an Alternate Route to Market (ARTM). There is an annual 400 gallons volume threshold used to distinguish the customers between the direct delivery route and ARTM. However, SCCU is looking for a more cost-efficient strategy to decide new threshold for optimizing logistics which is driving better operational efficiency and more revenues.
 ### SCCU Customer Growth & Delivery Cost Optimization
 Overview
 This project analyzes customer growth patterns and optimizes delivery costs for SCCU using predictive modeling and clustering. By identifying growth-ready customers and optimizing delivery routing, we achieved significant cost reductions and created a scalable framework for future logistics and marketing strategies.
 Key Results
 Customer Growth Identification
-
  - 1,268 customers transitioned from 'below' to 'above' the annual volume threshold (2023 to 2024)
-
  -  These customers represent high-growth, high-value potential for targeted sales and retention programs
 
 Predictive Modeling (Logistic Regression)
-
  -  Accuracy: 87%
-
  -  Precision (above group): 0.74 | Recall: 0.87 | F1-score: 0.80
-
  -  The model effectively identifies future growth customers for proactive targeting
 
 Multi-Dimensional Clustering (ZIP + Volume)
-
-  -  Customers clustered based on ZIP code, annual ordered cases, and gallons
-
-  -  5 optimized clusters support region-specific delivery routing and load planning
-
-  -  Enables smarter delivery zones tailored by order type and customer density
+ -  Customers clustered based on ZIP code, annual ordered cases, and gallons
+ -  5 optimized clusters support region-specific delivery routing and load planning
+ -  Enables smarter delivery zones tailored by order type and customer density
 
 Gallons vs. Cases Analysis
-
-  -  Segmented customers by gallons-per-case ratio to distinguish bulk liquid vs. packaged goods ordering patterns
-
-  -  Identified high gallon-per-case customers ideal for liquid delivery planning
+-  Segmented customers by gallons-per-case ratio to distinguish bulk liquid vs. packaged goods ordering patterns
+-  Identified high gallon-per-case customers ideal for liquid delivery planning
 
 Validated Cost Efficiency: Before vs. After Clustering
 
