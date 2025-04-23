@@ -52,7 +52,18 @@ Methodology
   -  Compared average delivery costs before and after clustering (both per case and per gallon)
   -  Quantified cost savings and efficiency gains from optimized delivery zones
 
-Strategic Takeaways
+  -  ##  Difficulties Encountered
+  - Integrating and cleaning data from multiple sources with inconsistent formats.
+  - Balancing class distributions for predictive modeling.
+  - Determining the optimal number of clusters for delivery routing.
+  - Translating technical analysis into actionable business recommendations.
+  - ##  What I Learned
+ - Gained hands-on experience with the full data science pipeline.
+ - Learned the importance of business context in analytics.
+ - Improved communication skills for presenting technical findings.
+ - Discovered the value of iterative experimentation in modeling and clustering.
+
+  - ## Strategic Takeaways
   -  Clustering customers by geography and order behavior dramatically reduces delivery costs
 
   -  Predictive modeling enables proactive targeting of high-potential growth customers
